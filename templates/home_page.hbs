@@ -10,8 +10,10 @@
 
 <div class="container">
 
-  <section class="section knowledge-base service-cards">
+
+  <section class="section knowledge-base">
     <h2 class="visibility-hidden">{{ t 'categories' }}</h2>
+
     <section class="categories blocks">
       <ul class="blocks-list">
         {{#each categories}}
@@ -24,7 +26,7 @@
             </li>
           {{else}}
             {{#each sections}}
-              {{isnt id="35864176275867"}}
+              {{isnt id 35620405716379}}
               <li class="blocks-item">
                 <a href='{{url}}' class="blocks-item-link">
                   <span class="blocks-item-title">
@@ -33,7 +35,7 @@
                   <span class="blocks-item-description">{{excerpt description}}</span>
                 </a>
               </li>
-              {{/isnt}}
+            {{/isnt}}
             {{/each}}
           {{/if}}
         {{/each}}
@@ -41,8 +43,6 @@
       {{pagination}}
     </section>
 
-  <section class="section knowledge-base">
-    <h2 class="visibility-hidden">{{ t 'categories' }}</h2>
     <section class="categories blocks">
       <ul class="blocks-list">
         {{#each categories}}
