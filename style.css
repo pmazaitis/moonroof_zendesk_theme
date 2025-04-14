@@ -1554,7 +1554,7 @@ ul {
     text-align: center;
 }
 .community-image {
-    min-height: 300px;
+    min-height: 100px;
     margin-top: 32px;
     background-image: url($community_image);
     background-position: center;
